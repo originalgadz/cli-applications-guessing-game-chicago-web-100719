@@ -1,7 +1,8 @@
 def run_guessing_game
   number = rand(6) + 1
+  number = number.to_s
   
-  input = gets.chomp.to_i
+  input = gets.chomp
   
   if input == number
     puts "You guessed the correct number!"
